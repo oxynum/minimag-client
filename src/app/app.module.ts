@@ -6,12 +6,16 @@ import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
 import { BottomBarComponent } from './bottom-bar/bottom-bar.component';
 import { PanelComponent } from './panel/panel.component';
+import { SplitterComponent } from './panel/splitter/splitter.component';
+import { BagComponent } from './panel/bag/bag.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     BottomBarComponent,
-    PanelComponent
+    PanelComponent,
+    SplitterComponent,
+    BagComponent
   ],
   imports: [
     BrowserModule,
