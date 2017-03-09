@@ -6,10 +6,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./bag.component.css']
 })
 export class BagComponent implements OnInit {
-
+  items: Array<any> = [];
   constructor() { }
 
   ngOnInit() {
   }
 
+  addToBag() {
+    this.items.push("Echo");
+  }
 }
