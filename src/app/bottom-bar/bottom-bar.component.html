@@ -1,8 +1,66 @@
-<footer class="navbar navbar-inverse navbar-fixed-bottom">
+<footer class="navbar navbar-inverse navbar-fixed-bottom mag-navbar">
+  <ul class="nav navbar-nav navbar-left">
+    <li>
+      <a href="" class="align-middle mag-menu-item-right">
+        <div class="mag-current-user">
+          <h4>
+            <span class="glyphicon glyphicon-chevron-up">
+            </span>
+          </h4>
+        </div>
+        <h4>
+          Tickets <span class="badge">{{currentTicket}}</span>
+        </h4>
+      </a>
+    </li>
+  </ul>
   <ul class="nav navbar-nav">
-    <li><a href=""><h3><span class="glyphicon glyphicon-search"></span></h3></a></li>
-    <li><a href=""><h3><span class="glyphicon glyphicon-pencil"></span></h3></a></li>
-    <li><a href=""><h3><span class="glyphicon glyphicon-tag"></span></h3></a></li>
-    <li><a href=""><h3><span class="glyphicon glyphicon-barcode"></span></h3></a></li>
+    <li>
+      <a href="#" class="align-middle mag-menu-item">
+        <h4>
+          <span class="glyphicon glyphicon-search">
+          </span>
+        </h4>
+      </a>
+    </li>
+    <li>
+      <a href="#" class="align-middle mag-menu-item">
+        <h4>
+          <span class="glyphicon glyphicon-pencil">
+          </span>
+        </h4>
+      </a>
+    </li>
+    <li>
+      <a href="#" class="align-middle mag-menu-item">
+        <h4>
+          <span class="glyphicon glyphicon-tag">
+          </span>
+        </h4>
+      </a>
+    </li>
+    <li>
+      <a href="#" class="align-middle mag-menu-item">
+        <h4>
+          <span class="glyphicon glyphicon-barcode">
+          </span>
+        </h4>
+      </a>
+    </li>
+  </ul>
+  <ul class="nav navbar-nav navbar-right">
+    <li>
+      <a href="" class="align-middle mag-menu-item-right">
+        <div class="mag-current-user">
+          <h4>
+            <span class="glyphicon glyphicon-user">
+            </span>
+          </h4>
+        </div>
+        <h4>
+          {{user}}
+        </h4>
+      </a>
+    </li>
   </ul>
 </footer>
