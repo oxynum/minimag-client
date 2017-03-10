@@ -6,10 +6,21 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./products.component.css']
 })
 export class ProductsComponent implements OnInit {
+  productList: Array<any> = [];
 
-  constructor() { }
+  constructor() {
+   for(let i=0; i< 10; i++) {
+    this.productList.push({
+      name: "Hello",
+      description: "hello is blah blah",
+      price: 80
+    });
+    }
+   }
 
   ngOnInit() {
+
   }
 
+  
 }

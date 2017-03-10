@@ -1,4 +1,7 @@
 app-panel {
-    width:100vw;
     height:50vh;
+}
+
+.el {
+    border:4px solid black;
 }
