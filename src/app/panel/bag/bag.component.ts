@@ -6,13 +6,20 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./bag.component.css']
 })
 export class BagComponent implements OnInit {
-  items: Array<any> = [];
+  products: Array<any> = []; // will be an Array of Product Services
+  discounts: Array<any> = [];
+  currentDiscount: number = -4; // will be a Discount object
+  
   constructor() { }
 
   ngOnInit() {
   }
 
   addToBag() {
-    this.items.push("Echo");
+    this.products.push({quantity:2, price:10.00, description:"test products"});
+  }
+
+  makeTotalForProduct(product: any, discount: number) {
+    return (product.quantity * product.price) - discount;
   }
 }

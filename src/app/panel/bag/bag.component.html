@@ -1,8 +1,35 @@
-<div>
-     <input type="text" ngModel="foo" placeholder="Enter something" />
-     <button type="" class="btn btn-primary" (click)="addToBag(foo)">Click to add</button>
-     <label *ngFor="let item of items">{{item}}</label>
+<div class="container">
+    <table class="table">
+        <thead>
+            <th>
+                Quantité
+            </th>
+            <th>
+                Description
+            </th>
+            <th>
+                Prix
+            </th>
+            <th>
+                Remise
+            </th>
+            <th>
+                Total
+            </th>
+        </thead>
+        <tbody>
+            <tr *ngFor="let product of products">
+                <td>{{product.quantity}}</td>
+                <td>{{product.description}}</td>
+                <td>{{product.price}}</td>
+                <td>{{currentDiscount.amount}}</td>
+                <td>{{makeTotalForProduct(product, currentDiscount)}}</td>
+            </tr>
+        </tbody>
+    </table>
+    <button type="" (click)="addToBag()" class="btn btn-primary"></button>
+    <app-numeric-pad>
+    </app-numeric-pad>
 </div>
-
 
   

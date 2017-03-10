@@ -8,6 +8,7 @@ import { BottomBarComponent } from './bottom-bar/bottom-bar.component';
 import { PanelComponent } from './panel/panel.component';
 import { SplitterComponent } from './panel/splitter/splitter.component';
 import { BagComponent } from './panel/bag/bag.component';
+import { NumericPadComponent } from './panel/numeric-pad/numeric-pad.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { BagComponent } from './panel/bag/bag.component';
     BottomBarComponent,
     PanelComponent,
     SplitterComponent,
-    BagComponent
+    BagComponent,
+    NumericPadComponent
   ],
   imports: [
     BrowserModule,
