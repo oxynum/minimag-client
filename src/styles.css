@@ -2,10 +2,14 @@
 
 /* Spinner Animation */
 
+body {
+  background-color: #e9eaef;
+}
+
 .sk-cube-grid {
   width: 40px;
   height: 40px;
-  margin: 100px auto;
+  margin: 400px auto;
 }
 
 .sk-cube-grid .sk-cube {
@@ -18,10 +22,12 @@
 }
 .sk-cube-grid .sk-cube1 {
   -webkit-animation-delay: 0.2s;
-          animation-delay: 0.2s; }
+          animation-delay: 0.2s; 
+}
 .sk-cube-grid .sk-cube2 {
   -webkit-animation-delay: 0.3s;
-          animation-delay: 0.3s; }
+          animation-delay: 0.3s; 
+}
 .sk-cube-grid .sk-cube3 {
   -webkit-animation-delay: 0.4s;
           animation-delay: 0.4s; }

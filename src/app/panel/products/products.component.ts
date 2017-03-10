@@ -1,21 +1,19 @@
 import { Component, OnInit } from '@angular/core';
 
+import { SellerService } from "app/service/seller.service";
+import { ProductService } from "app/service/product.service";
+import { BagComponent } from "app/panel/bag/bag.component";
+
 @Component({
   selector: 'app-products',
   templateUrl: './products.component.html',
   styleUrls: ['./products.component.css']
 })
 export class ProductsComponent implements OnInit {
-  productList: Array<any> = [];
+  productList: Array<ProductService> = [];
 
   constructor() {
-   for(let i=0; i< 10; i++) {
-    this.productList.push({
-      name: "Hello",
-      description: "hello is blah blah",
-      price: 80
-    });
-    }
+    this.productList = (new ProductService()).getFakeList();
    }
 
   ngOnInit() {

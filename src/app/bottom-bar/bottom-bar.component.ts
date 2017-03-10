@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
+import { SellerService } from "app/service/seller.service";
+
 @Component({
   selector: 'app-bottom-bar',
   templateUrl: './bottom-bar.component.html',
@@ -7,7 +9,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BottomBarComponent implements OnInit {
   displayAllMenuItem: boolean = true;
-  user: string = "John Doe";
+  user: SellerService = new SellerService().getFake();
   currentTicket: number = 0; 
 
   constructor() { }

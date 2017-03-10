@@ -14,6 +14,7 @@ import { ProductsComponent } from './panel/products/products.component';
 import { TransactionService } from "app/service/transaction.service";
 import { ShopService } from "app/service/shop.service";
 import { ProductService } from "app/service/product.service";
+import { SellerService } from "app/service/seller.service";
 
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import { ProductService } from "app/service/product.service";
   providers: [
     ProductService,
     ShopService,
-    TransactionService
+    TransactionService,
+    SellerService
   ],
   bootstrap: [AppComponent]
 })
