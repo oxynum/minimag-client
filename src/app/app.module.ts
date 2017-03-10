@@ -11,6 +11,10 @@ import { BagComponent } from './panel/bag/bag.component';
 import { NumericPadComponent } from './panel/numeric-pad/numeric-pad.component';
 import { ProductsComponent } from './panel/products/products.component';
 
+import { TransactionService } from "app/service/transaction.service";
+import { ShopService } from "app/service/shop.service";
+import { ProductService } from "app/service/product.service";
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -26,7 +30,11 @@ import { ProductsComponent } from './panel/products/products.component';
     FormsModule,
     HttpModule
   ],
-  providers: [],
+  providers: [
+    ProductService,
+    ShopService,
+    TransactionService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
