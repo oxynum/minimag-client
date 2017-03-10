@@ -9,6 +9,7 @@ import { PanelComponent } from './panel/panel.component';
 import { SplitterComponent } from './panel/splitter/splitter.component';
 import { BagComponent } from './panel/bag/bag.component';
 import { NumericPadComponent } from './panel/numeric-pad/numeric-pad.component';
+import { ProductsComponent } from './panel/products/products.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { NumericPadComponent } from './panel/numeric-pad/numeric-pad.component';
     PanelComponent,
     SplitterComponent,
     BagComponent,
-    NumericPadComponent
+    NumericPadComponent,
+    ProductsComponent
   ],
   imports: [
     BrowserModule,

@@ -22,12 +22,13 @@
                 <td>{{product.quantity}}</td>
                 <td>{{product.description}}</td>
                 <td>{{product.price}}</td>
-                <td>{{currentDiscount.amount}}</td>
+                <td>{{currentDiscount}}</td>
                 <td>{{makeTotalForProduct(product, currentDiscount)}}</td>
             </tr>
         </tbody>
     </table>
-    <button type="" (click)="addToBag()" class="btn btn-primary"></button>
+    <button type="" (click)="addToBag()" class="btn btn-primary">+</button>
+    <button type="" (click)="deleteLastProduct()" class="btn btn-warning">-</button>
     <app-numeric-pad>
     </app-numeric-pad>
 </div>

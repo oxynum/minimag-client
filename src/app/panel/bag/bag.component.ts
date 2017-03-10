@@ -8,8 +8,8 @@ import { Component, OnInit } from '@angular/core';
 export class BagComponent implements OnInit {
   products: Array<any> = []; // will be an Array of Product Services
   discounts: Array<any> = [];
-  currentDiscount: number = -4; // will be a Discount object
-  
+  currentDiscount: number = 4; // will be a Discount object
+
   constructor() { }
 
   ngOnInit() {
@@ -18,7 +18,9 @@ export class BagComponent implements OnInit {
   addToBag() {
     this.products.push({quantity:2, price:10.00, description:"test products"});
   }
-
+  deleteLastProduct() {
+    this.products.pop();
+  }
   makeTotalForProduct(product: any, discount: number) {
     return (product.quantity * product.price) - discount;
   }
