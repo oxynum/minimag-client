@@ -19,6 +19,12 @@ export class ProductsComponent implements OnInit {
   ngOnInit() {
 
   }
+   assignCopy() {
+     this.productList = Object.assign([], this.productList);
+   }
+   filteredItem(value) {
+     if(!value) this.assignCopy();
+     this.productList = Object.assign([], this.productList).filter( item => item.name.toLowerCase().indexOf(value.toLowerCase()) > -1)
 
-  
+   }
 }
