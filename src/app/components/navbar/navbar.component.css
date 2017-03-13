@@ -1,0 +1,16 @@
+.mini-nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    top: 0;
+    left: 0;
+    position: fixed;
+    height: 100vh;
+    width: 150px;
+    background-color: #295786;
+}
+
+.mini-seller {
+    padding-bottom: 20px;
+}
