@@ -22,11 +22,23 @@
 }
 
 a {
-    color: grey;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    color: #cecece;
     text-decoration: none;
 }
 
 a:hover {
     color: white;
     text-decoration: none;
+    transition: .3s;
+    cursor: pointer;
+}
+
+img {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
 }
