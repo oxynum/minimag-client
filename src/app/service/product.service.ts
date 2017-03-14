@@ -1,5 +1,4 @@
 import { Injectable, Injector } from '@angular/core';
-import { BagComponent } from "app/panel/bag/bag.component";
 
 @Injectable()
 export class ProductService {
@@ -28,6 +27,4 @@ export class ProductService {
 
     return fakeProductList;
   }
-
-
 }

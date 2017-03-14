@@ -7,10 +7,26 @@
     left: 0;
     position: fixed;
     height: 100vh;
-    width: 150px;
+    width: 120px;
     background-color: #295786;
+    font-family: "arial";
 }
 
 .mini-seller {
     padding-bottom: 20px;
+}
+
+.mini-nav-items-wrap {
+    padding-top: 20px;
+    color: white;
+}
+
+a {
+    color: grey;
+    text-decoration: none;
+}
+
+a:hover {
+    color: white;
+    text-decoration: none;
 }
