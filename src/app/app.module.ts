@@ -20,7 +20,10 @@ import { SettingComponent } from './components/panel/setting/setting.component';
 import { WaitingTicketComponent } from './components/panel/waiting-ticket/waiting-ticket.component';
 
 const appRoutes: Routes = [
-  { path: '',component: PanelComponent}
+  { path: '', component: CatalogComponent },
+  { path: 'archives', component: ArchiveComponent },
+  { path: 'settings', component: SettingComponent },
+  { path: 'waiting', component: WaitingTicketComponent }
 ];
 
 @NgModule({
