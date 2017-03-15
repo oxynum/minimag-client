@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-archive',
+  selector: 'mini-archive',
   templateUrl: './archive.component.html',
   styleUrls: ['./archive.component.scss']
 })

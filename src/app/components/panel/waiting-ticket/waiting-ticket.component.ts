@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-waiting-ticket',
+  selector: 'mini-waiting-ticket',
   templateUrl: './waiting-ticket.component.html',
   styleUrls: ['./waiting-ticket.component.scss']
 })
