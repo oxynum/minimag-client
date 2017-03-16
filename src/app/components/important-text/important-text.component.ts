@@ -6,8 +6,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./important-text.component.scss']
 })
 export class ImportantTextComponent implements OnInit {
+  public text: string;
 
-  constructor(text: string) { }
+  constructor() { }
 
   ngOnInit() {
   }

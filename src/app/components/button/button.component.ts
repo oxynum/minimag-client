@@ -6,8 +6,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./button.component.scss']
 })
 export class ButtonComponent implements OnInit {
+  public iconName: string = 'rightArrow';
+  public text: string;
+  public disabled: boolean = false;
 
-  constructor(iconName: string = 'rightArrow', text: string, onClick: Object, disabled: boolean = false) { }
+  constructor() { }
 
   ngOnInit() {
   }

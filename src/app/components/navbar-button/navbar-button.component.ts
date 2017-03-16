@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'mini-navbar-button',
@@ -6,11 +6,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./navbar-button.component.scss']
 })
 export class NavbarButtonComponent implements OnInit {
+  @Input() public text: string;
+  @Input() public iconName: string;
+  @Input() public count: number;
+  @Input() public selected: boolean = false;
 
-  constructor(text:string, iconSrc:string, count:number, selected: boolean = false) {
-    this.text = text;
-    this.iconSrc = iconSrc;
-    this.count = count;
+  constructor() {
   }
 
   ngOnInit() {

@@ -6,8 +6,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./search-box.component.scss']
 })
 export class SearchBoxComponent implements OnInit {
+  public placeholder: string;
+  public defaultValue: string;
+  public onChange: Function;
 
-  constructor(placeholder: string, defaultValue: string, onChange: Function) { }
+  constructor() { }
 
   ngOnInit() {
   }

@@ -6,8 +6,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./subtitle.component.scss']
 })
 export class SubtitleComponent implements OnInit {
+  public text: string;
 
-  constructor(text: string) { }
+  constructor() { }
 
   ngOnInit() {
   }

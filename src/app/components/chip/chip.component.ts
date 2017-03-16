@@ -6,8 +6,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./chip.component.scss']
 })
 export class ChipComponent implements OnInit {
+  public count: number;
+  public className: string;
 
-  constructor(count: number, className: string, onClick: Object) { }
+  constructor() { }
 
   ngOnInit() {
   }

@@ -6,8 +6,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./panel.component.scss']
 })
 export class PanelComponent implements OnInit {
+  public topComponent: string;
+  public bottomComponent: string;
 
-  constructor(topComponent: Object, bottomComponent: Object) { }
+  constructor() { }
 
   ngOnInit() {
 

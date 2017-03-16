@@ -6,8 +6,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./counter.component.scss']
 })
 export class CounterComponent implements OnInit {
+  public text: string;
+  public number: number;
 
-  constructor(text: string, number: number) { }
+  constructor() { }
 
   ngOnInit() {
   }

@@ -6,10 +6,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./navbar.component.scss']
 })
 export class NavbarComponent implements OnInit {
+  public topElements: Object[];
+  public bottomElements: Object[];
 
-  constructor(topElements:object[], bottomElements: object[]) {
-    this.topElements = topElements;
-    this.bottomElements = bottomElements;
+  constructor() {
   }
 
   ngOnInit() {

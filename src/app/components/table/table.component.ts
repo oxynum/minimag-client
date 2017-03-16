@@ -6,8 +6,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./table.component.scss']
 })
 export class TableComponent implements OnInit {
+  public headers: string[];
+  public rowsData: Object[];
 
-  constructor(headers: string[], rowsData: Object[]) { }
+  constructor() { }
 
   ngOnInit() {
   }

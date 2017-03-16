@@ -6,11 +6,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./dropdown.component.scss']
 })
 export class DropdownComponent implements OnInit {
-
   // items: [{title: string, onClick: function}]
-  constructor(items: object[]) {
-    this.items = items;
-  }
+  public items: Object[];
+
+  constructor() {}
 
   ngOnInit() {
   }

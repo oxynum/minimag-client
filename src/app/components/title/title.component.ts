@@ -6,8 +6,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./title.component.scss']
 })
 export class TitleComponent implements OnInit {
+  public text: string;
+  public important: boolean = true;
 
-  constructor(text: string, important: boolean = true) { }
+  constructor() { }
 
   ngOnInit() {
   }

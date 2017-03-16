@@ -6,9 +6,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./item-line.component.scss']
 })
 export class ItemLineComponent implements OnInit {
+  public leftText: string;
+  public rightText: string;
+  public chipCount: number;
+  public withBottomBorder: boolean;
+  public isImportant: boolean;
+  public onChipClick: Function;
 
-  constructor(leftText: string, rightText: string, chipCount: number,
-    withBottomBorder: boolean, isImportant: boolean, onChipClick: Object) {
+  constructor() {
 
   }
 
