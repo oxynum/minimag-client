@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'mini-search-box',
@@ -6,13 +6,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./search-box.component.scss']
 })
 export class SearchBoxComponent implements OnInit {
-  public placeholder: string;
-  public defaultValue: string;
-  public onChange: Function;
+
+  @Input() public placeholder: string;
+  @Input() public defaultValue: string;
+  @Input() public onChange: Function;
 
   constructor() { }
 
   ngOnInit() {
+
   }
 
 }
