@@ -7,10 +7,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PanelComponent implements OnInit {
 
-  constructor() { }
+  constructor(topComponent: Object, bottomComponent: Object) { }
 
   ngOnInit() {
-    
+
   }
 
 }

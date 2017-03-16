@@ -18,6 +18,20 @@ import { CatalogComponent } from './components/panel/catalog/catalog.component';
 import { ArchiveComponent } from './components/panel/archive/archive.component';
 import { SettingComponent } from './components/panel/setting/setting.component';
 import { WaitingTicketComponent } from './components/panel/waiting-ticket/waiting-ticket.component';
+import { NavbarButtonComponent } from './components/navbar-button/navbar-button.component';
+import { ChipComponent } from './components/chip/chip.component';
+import { SidebarComponent } from './components/sidebar/sidebar.component';
+import { ImportantTextComponent } from './components/important-text/important-text.component';
+import { DropdownComponent } from './components/dropdown/dropdown.component';
+import { ItemLineComponent } from './components/item-line/item-line.component';
+import { ButtonComponent } from './components/button/button.component';
+import { TitleComponent } from './components/title/title.component';
+import { SubtitleComponent } from './components/subtitle/subtitle.component';
+import { SearchBoxComponent } from './components/search-box/search-box.component';
+import { SearchBarComponent } from './components/search-bar/search-bar.component';
+import { CounterComponent } from './components/counter/counter.component';
+import { TableComponent } from './components/table/table.component';
+import { RowComponent } from './components/row/row.component';
 
 const appRoutes: Routes = [
   { path: '', component: CatalogComponent },
@@ -35,7 +49,22 @@ const appRoutes: Routes = [
     CatalogComponent,
     ArchiveComponent,
     SettingComponent,
-    WaitingTicketComponent
+    WaitingTicketComponent,
+    NavbarButtonComponent,
+    ChipComponent,
+    SidebarComponent,
+    ImportantTextComponent,
+    DropdownComponent,
+    ItemLineComponent,
+    ButtonComponent,
+    TitleComponent,
+    SubtitleComponent,
+    SearchBoxComponent,
+    SearchBarComponent,
+    CounterComponent,
+    TableComponent,
+    WorComponent,
+    RowComponent
   ],
   imports: [
     BrowserModule,
