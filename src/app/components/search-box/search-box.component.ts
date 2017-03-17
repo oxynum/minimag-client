@@ -14,7 +14,5 @@ export class SearchBoxComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-
   }
-
 }
