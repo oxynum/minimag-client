@@ -1,0 +1,19 @@
+.mini-counter {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 50px;
+}
+
+.mini-counter-number {
+    color: #587996;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.mini-counter-text {
+    color: #C3CFD8;
+    padding-bottom: 10px;
+    font-size: .75em;
+}
