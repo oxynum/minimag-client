@@ -6,8 +6,8 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./title-identificator.component.scss']
 })
 export class TitleIdentificatorComponent implements OnInit {
-  @Input() public text:string = "Title";
-  @Input() public dynamicValue:string = "dynamic";
+  @Input() public text: string = "Title";
+  @Input() public dynamicValue: string = "dynamic";
   
   constructor() { }
 
