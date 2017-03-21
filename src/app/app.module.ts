@@ -24,6 +24,7 @@ import { CounterComponent } from './components/counter/counter.component';
 import { TableComponent } from './components/table/table.component';
 import { RowComponent } from './components/row/row.component';
 import { PreviewComponent } from './components/preview/preview.component';
+import { TitleIdentificatorComponent } from './components/title-identificator/title-identificator.component';
 
 const appRoutes: Routes = [
   // { path: '', component: AppComponent }
@@ -49,6 +50,7 @@ const appRoutes: Routes = [
     TableComponent,
     RowComponent,
     PreviewComponent,
+    TitleIdentificatorComponent,
   ],
   imports: [
     BrowserModule,
