@@ -7,4 +7,3 @@
 ## Properties 
 - text:string
 - important:boolean
-
