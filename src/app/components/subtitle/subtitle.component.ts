@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'mini-subtitle',
@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./subtitle.component.scss']
 })
 export class SubtitleComponent implements OnInit {
-  public text: string;
+  @Input() public text: string;
 
   constructor() { }
 
