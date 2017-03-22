@@ -42,8 +42,9 @@
     <h2>
         mini-title-identificator
     </h2>
-    <mini-title-identificator text="CLIENT" dynamicValue="#123452">
+    <mini-title-identificator text="CLIENT" dynamicValue="{{eywa}}">
     </mini-title-identificator>
+    <input type="text" name="" [(ngModel)]="eywa" value="dede" placeholder="Indicate dynamic "/>
 </div>
 <hr>
 <div>
@@ -51,4 +52,18 @@
         mini-subtitle
     </h2>
     <mini-subtitle text="AUCUN RESULTAT"></mini-subtitle>
+</div>
+<hr>
+<div>
+    <h2>
+        mini-chip
+    </h2>
+    <label for="">Default</label>
+    <mini-chip count=4 ></mini-chip>
+    <br>
+    <label for="">Blue</label>
+    <mini-chip count=4 className="chip-blue"></mini-chip>
+    <br>
+    <label for="">Limit (if you put 100, limit is set to +99)</label>
+    <mini-chip count=100 className="chip-blue"></mini-chip>
 </div>

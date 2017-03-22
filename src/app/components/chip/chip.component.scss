@@ -1,0 +1,24 @@
+.chip-cp {
+    width: 30px;
+    height: 30px;
+}
+
+.chip-cp-circle {
+    text-align: center;
+    vertical-align: middle;
+    line-height: 30px;
+    border-radius: 100%;
+    background: #EAEAEA;
+    width: 100%;
+    height:100%;
+}
+
+.chip-blue {
+    background: #11A9EB;
+    color: #E8F4FB;
+}
+
+.chip-default {
+    background: #EAEAEA;
+    color: #35698C;
+}
