@@ -6,4 +6,5 @@
  Chip component that will be use on the top of menu items of to indicate article numbers
 ## Properties 
 - count:number
+- className:string
 
