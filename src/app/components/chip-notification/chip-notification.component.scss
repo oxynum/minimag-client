@@ -1,9 +1,9 @@
-.chip-cp {
+.chip-notif-cp {
     width: 25px;
     height: 25px;
 }
 
-.chip-cp-circle {
+.chip-notif-cp-circle {
     text-align: center;
     vertical-align: middle;
     line-height: 25px;
@@ -13,7 +13,12 @@
     height:100%;
 }
 
-.chip-default {
+.chip-notif-blue {
+    background: #11A9EB;
+    color: #E8F4FB;
+}
+
+.chip-notif-default {
     background: #EAEAEA;
     color: #35698C;
 }
