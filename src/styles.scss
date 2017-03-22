@@ -1,10 +1,11 @@
 /* You can add global styles to this file, and also import other style files */
-
+@import "/assets/fonts/minicon/minicon";
+@import "/assets/fonts/brandonGrotesque/brandonGrotesque";
 /* Spinner Animation */
 
 body {
   background-color: #ffffff;
-  font-family: "arial";
+  font-family: "brandon_grotesquebold";
 }
 
 .sk-cube-grid {
@@ -73,3 +74,5 @@ body {
             border-radius:20px;
   } 
 }
+
+ 

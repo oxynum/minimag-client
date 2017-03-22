@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'mini-button',
@@ -6,13 +6,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./button.component.scss']
 })
 export class ButtonComponent implements OnInit {
-  public iconName: string = 'rightArrow';
-  public text: string;
-  public disabled: boolean = false;
+  @Input() public iconName: string = "icon-forward-right-arrow-button";
+  @Input() public text: string;
+  @Input() public disabled: boolean = false;
+  @Input() public dynamicValue: string = "";
 
   constructor() { }
 
   ngOnInit() {
   }
-
 }
