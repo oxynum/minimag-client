@@ -2,7 +2,13 @@ $background-btn-color: #476681;
 
 .button-cpt {
     width: 150px;
-    height: 30px;
+    height: 50px;
+    font-family: "brandon_grotesquebold";
+}
+
+.btn-icon {
+    padding-top: 2px;
+    color: #BADF36;
 }
 
 .button-cpt-btn {
@@ -10,6 +16,12 @@ $background-btn-color: #476681;
     flex-direction: row;
     justify-content: space-around;
     background: $background-btn-color;
+    border: 0;
+    font-size: 1em;
+    border-radius: 7px;
     width: 100%;
-    height:100%;
+    height: 100%;
+    cursor:pointer;
+    color: #FEFFFE;
+    font-family: "brandon_grotesquebold";
 }

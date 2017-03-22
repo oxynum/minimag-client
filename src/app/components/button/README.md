@@ -8,4 +8,4 @@
 - iconName:string
 - text:string
 - disbaled:boolean
-
+- dynamicValue:string
