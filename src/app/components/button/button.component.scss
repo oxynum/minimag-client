@@ -1,0 +1,15 @@
+$background-btn-color: #476681;
+
+.button-cpt {
+    width: 150px;
+    height: 30px;
+}
+
+.button-cpt-btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background: $background-btn-color;
+    width: 100%;
+    height:100%;
+}
