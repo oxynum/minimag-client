@@ -79,3 +79,12 @@
     </h2>
     <mini-important-text text="DEUX MILLES DEUX CENTS"></mini-important-text>
 </div>
+<hr>
+<div>
+    <h2>
+        mini-dropdown
+    </h2>
+    <mini-dropdown [actions]="itemsForMiniDropDown" (actionEvent)="displayAction($event)"></mini-dropdown>
+    <br>
+    <span>Action is: {{actionFor_miniDropDown}}</span>
+</div>
