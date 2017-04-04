@@ -1,3 +1,7 @@
-<p>
-  dropdown works!
-</p>
+<div class="dropdown-cp">
+  <div class="dropdown-btn-cp" (click)="toggleOpen($event)">
+  </div>
+  <div class="dropdown-content" *ngIf="dropdownWatcher">
+    <button type="button" class="dropdown-action" *ngFor="let action of actions" (click)="sendAction($event)">{{action.action}}</button>
+  </div>
+</div>
