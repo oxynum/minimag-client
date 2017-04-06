@@ -1,9 +1,14 @@
+@import '../../../assets/_variables';
+@import '../../../assets/_helper';
+@import '../../../assets/_reset';
+
 $background-btn-color: #476681;
 
 .button-cpt {
     width: 150px;
     height: 50px;
     font-family: "brandon_grotesquebold";
+    outline:0;
 }
 
 .btn-icon {
@@ -24,4 +29,12 @@ $background-btn-color: #476681;
     cursor:pointer;
     color: #FEFFFE;
     font-family: "brandon_grotesquebold";
+}
+
+.disabled-true {
+    background: black;
+}
+
+.disabled-false {
+    
 }

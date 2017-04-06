@@ -18,6 +18,7 @@
       "tsconfig": "tsconfig.json",
       "prefix": "mini",
       "styles": [
+        "assets/_variables.scss",
         "styles.scss"
       ],
       "scripts": [

@@ -1,1 +1,40 @@
-<p></p>
+      <section class="panel">
+        <header class="header-panel flex-container">
+          <div class="search-module">
+            <form action="" class="">
+              <mini-title text="SEARCH"></mini-title>
+              <mini-search-box placeholder="EAN OR NAME"></mini-search-box>
+              <input type="submit" class="submit search invisible">
+            <mini-dropdown [actions]="itemsForMiniDropDown" (actionEvent)="addToArticles($event)"></mini-dropdown>
+            </form>        
+          </div>
+          <mini-counter text="Articles" number="{{items.length}}"></mini-counter>
+        </header>
+        <!-- <section class="panel-items-list grid"> -->
+        <section class="panel-items-list">
+          <header class="header-panel-item-list flex-container panel-row-header">
+              <div class="ean-head"><mini-important-text text="EAN"></mini-important-text></div>
+              <div class="name-head"><mini-important-text text="Name"></mini-important-text></div>
+              <div class="price-head"><mini-important-text text="Price"></mini-important-text></div>
+              <div class="price-head"><mini-important-text text="Reduce Price"></mini-important-text></div>
+              <div class="promotion-head"><mini-important-text text="Promo"></mini-important-text></div>
+              <div class="state-head"><mini-important-text text="State"></mini-important-text></div>
+              <div class="attribute-head"><mini-important-text text="Attribute"></mini-important-text></div>
+              <div class="option-head"></div>
+              <div class="actions-head"></div>
+          </header>
+          <ul>
+            <li class="panel-row" *ngFor="let item of items">
+              <div class="ean-column">{{item.EAN}}</div>
+              <div class="name-column">{{item.Name}}</div>
+              <div class="price-column"> {{item.Price}}<span class="devise">€</span></div>
+              <div class="sale-column"> {{item.Price}}<span class="devise">€</span></div>
+              <div class="promotion-column">{{item.Promo}}</div>
+              <div class="state-column">{{item.State}}</div>
+              <div class="attribute-column"> {{item.Attribute}}<span class="unit">cm</span></div>
+              <div class="option-column"><mini-dropdown [actions]="itemsForMiniDropDown" (actionEvent)="addToArticles($event)"></mini-dropdown></div>
+              <div class="actions-column"><mini-button text="Encaisser" dynamicValue="174€"></mini-button></div>
+            </li>
+          </ul>
+        </section>
+      </section>

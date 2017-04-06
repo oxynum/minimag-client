@@ -1,3 +1,8 @@
+@import '../../../assets/_variables';
+@import '../../../assets/_helper';
+@import '../../../assets/_reset';
+
+
 $background-color: #2873A1;
 $size-btn: 6px;
 $dropdown-shadow: 1px 0px 10px #2873A1;
@@ -74,3 +79,36 @@ $dropdown-shadow: 1px 0px 10px #2873A1;
         background: #285785;
     }
 }
+
+  .context-menu {
+    right: 50px;
+    top: 50px;
+    position: absolute;
+    z-index: 9999;
+    background: $color-0;
+    padding: 10px;
+    border-radius: 1.5em;
+    border-top-left-radius: 0;
+    width: 150px;
+    button {
+      display: block;
+      background: rgba(0,0,0,.2);
+      width: 100%;
+      border-radius: 2em;
+      padding: 10px;
+      margin-bottom: 2px;
+      color: #fff;
+      text-transform: uppercase;
+    }
+    &:before {
+      content: "";
+      display: block;
+      margin-top: -30px;
+      height: 30px;
+      background: #265688;
+      width: 20px;
+      margin-left: -10px;
+      border-top-left-radius: 1em;
+      border-top-right-radius: 1em;
+    }
+  }

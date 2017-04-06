@@ -1,0 +1,112 @@
+@import '../../../assets/_variables';
+@import '../../../assets/_helper';
+@import '../../../assets/_reset';
+
+  .panel {
+    position: relative;
+    flex: 8;
+    background: $color-3;
+    padding: 2em 2em 7em 2em;
+    flex-direction: column;
+    display: flex;
+    .header-panel {
+      background: $color-white;
+      padding: 1em 2em;
+      border-top-left-radius: 1em;
+      border-top-right-radius: 1em;
+
+      .search-module {
+        flex: 11;
+        text-transform: uppercase;
+        .search-title {
+          font-size: 1.7em;
+          margin-right: 1em;
+        }
+        .input {
+          background: $color-5;
+          color: $color-6;
+          border: 1px solid $color-5;
+          font-size: 1.5em;
+          min-width: 10em;
+          padding: .2em .5em;
+        }
+      }
+      .quantity-module {
+        flex: 1;
+        text-align: center;
+        font-size: .8em;
+        text-transform: uppercase;
+      }
+    }
+    .panel-items-list {
+      border-bottom-left-radius: 1em;
+      border-bottom-right-radius: 1em;
+      background: $color-7;
+      overflow-y: auto;
+      flex: 1;
+      &.grid {
+        -webkit-overflow-scrolling: touch;
+        .panel-row-header{
+          display: none;
+        }
+        ul {
+            flex-wrap: wrap;
+            display: flex;
+            .panel-row {
+              flex: 1;
+              min-width: 33%;
+              min-width: 33.33333%;
+              flex-wrap: wrap;
+              flex-direction: column;
+              overflow: hidden;
+              flex: 1 1 33%;
+            }
+          }
+        }
+      .panel-row-header {
+        padding: 2em;
+        padding-bottom: 1em;  
+        border-bottom: .2em dotted $color-8;  
+        div {
+          flex: 2;
+          &.ean-head {
+            flex: 4;
+          }
+          &.name-head {
+            flex: 6;
+          }
+           &.option-head {
+            flex: 1;
+          }
+        }  
+      }
+      ul {
+        .panel-row {
+          padding: 1em 2em;
+          display: flex;
+          border-bottom: .2em dotted $color-8;
+          
+          &:nth-child(odd) {
+            background: $color-9;
+          }
+          div {
+            flex: 2;
+            &.ean-column {
+              flex: 4;
+            }
+            &.name-column {
+              flex: 6;
+            }
+            &.option-column {
+              flex: 1;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .flex-container {
+  display: flex;
+  position: relative;
+}

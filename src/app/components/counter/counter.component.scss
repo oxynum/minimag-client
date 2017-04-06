@@ -1,3 +1,8 @@
+@import '../../../assets/_variables';
+@import '../../../assets/_helper';
+@import '../../../assets/_reset';
+
+
 .mini-counter {
     display: flex;
     flex-direction: column;
