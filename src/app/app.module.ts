@@ -32,9 +32,9 @@ import { ArchivesPageComponent } from './layouts/archives-page/archives-page.com
 import { SettingsPageComponent } from './layouts/settings-page/settings-page.component';
 
 const appRoutes: Routes = [
-   { path: '/', component: SalesPageComponent },
-   { path: '/archives', component: ArchivesPageComponent },
-   { path: '/settings', component: SettingsPageComponent }
+   { path: '', component: SalesPageComponent, pathMatch: 'full' },
+   { path: 'archives', component: ArchivesPageComponent, pathMatch: 'full' },
+   { path: 'settings', component: SettingsPageComponent, pathMatch: 'full' }
 ];
 
 @NgModule({

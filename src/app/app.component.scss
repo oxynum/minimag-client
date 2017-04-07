@@ -1,0 +1,25 @@
+.flex-container {
+  display: flex;
+  position: relative;
+}
+
+.panel-items-list {
+      border-bottom-left-radius: 1em;
+      border-bottom-right-radius: 1em;
+      background: #f0f0f0;
+      overflow-y: auto;
+      flex: 1;
+      &.grid {
+        -webkit-overflow-scrolling: touch;
+        .panel-row-header{
+          display: none;
+        }
+      }
+}
+.panel {
+    position: relative;
+    flex: 8;
+    padding: 2em 2em 7em 2em;
+    flex-direction: column;
+    display: flex;
+}

@@ -1,3 +1,28 @@
+
+
+.flex-container {
+  display: flex;
+  position: relative;
+}
+
+.invisible {
+  visibility: hidden;
+}
+
+.menu-option {
+  border: 5px solid #265688;
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  display: inline-block;
+  -webkit-box-flex: inherit;
+  -ms-flex: inherit;
+  flex: inherit;
+  content: "";
+  padding: 0;
+  position: relative;
+}
+
 .hide {
   display: none !important;
 }

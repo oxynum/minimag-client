@@ -2,13 +2,7 @@
 @import '../../../assets/_helper';
 @import '../../../assets/_reset';
 
-  .panel {
-    position: relative;
-    flex: 8;
-    background: $color-3;
-    padding: 2em 2em 7em 2em;
-    flex-direction: column;
-    display: flex;
+  
     .header-panel {
       background: $color-white;
       padding: 1em 2em;
@@ -104,7 +98,6 @@
         }
       }
     }
-  }
 
   .flex-container {
   display: flex;
