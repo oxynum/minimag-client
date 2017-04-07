@@ -27,6 +27,9 @@ import { PreviewComponent } from './components/preview/preview.component';
 import { TitleIdentificatorComponent } from './components/title-identificator/title-identificator.component';
 import { HelperComponent } from './components/helper/helper.component';
 import { ChipNotificationComponent } from './components/chip-notification/chip-notification.component';
+import { SalesPageComponent } from './layouts/sales-page/sales-page.component';
+import { ArchivesPageComponent } from './layouts/archives-page/archives-page.component';
+import { SettingsPageComponent } from './layouts/settings-page/settings-page.component';
 
 const appRoutes: Routes = [
   // { path: '', component: AppComponent }
@@ -55,6 +58,9 @@ const appRoutes: Routes = [
     TitleIdentificatorComponent,
     HelperComponent,
     ChipNotificationComponent,
+    SalesPageComponent,
+    ArchivesPageComponent,
+    SettingsPageComponent,
   ],
   imports: [
     BrowserModule,
