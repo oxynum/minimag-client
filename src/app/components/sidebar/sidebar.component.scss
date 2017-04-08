@@ -2,6 +2,10 @@
 @import '../../../assets/_helper';
 @import '../../../assets/_reset';
 
+
+:host {
+  height: 100vh;
+}
   .navbar {
     flex: 1;
     background: $color-0;
@@ -9,6 +13,7 @@
     overflow-y: auto;
     max-width: 100px;
     min-width: 75px;
+    height: 100%;
     ul {
       li {
         .fa {

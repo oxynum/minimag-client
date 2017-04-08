@@ -2,7 +2,14 @@
 @import '../../../assets/_helper';
 @import '../../../assets/_reset';
 
-  
+  .panel {
+    position: relative;
+    flex: 8;
+    background: $color-3;
+    padding: .7em;
+    height: 100%;
+    flex-direction: column;
+    display: flex;
     .header-panel {
       background: $color-white;
       padding: 1em 2em;
@@ -98,8 +105,4 @@
         }
       }
     }
-
-  .flex-container {
-  display: flex;
-  position: relative;
-}
+  }
